@@ -15,14 +15,15 @@ usernamer has a plugin structure that enables a series of transformations:
 
 Usage
 -----------------------------------------
-usage: usernamer.py [ -f <file> ] [ -n <full name> ] [ -l ]
 
-flags:
-    -n  supplies a single name
-    -f  supplies name entries from text file
-    -l  converts result to lowercase
-    -p  manually specify plugins (comma-separated) [default: all]
-        ['normal', 'two_terms', 'one_term', 'normal_abbreviated', 'dotted_two_terms']
+    usage: usernamer.py [ -f <file> ] [ -n <full name> ] [ -l ]
+    
+    flags:
+        -n  supplies a single name
+        -f  supplies name entries from text file
+        -l  converts result to lowercase
+        -p  manually specify plugins (comma-separated) [default: all]
+            ['normal', 'two_terms', 'one_term', 'normal_abbreviated', 'dotted_two_terms']
 
 
 License
