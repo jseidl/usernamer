@@ -4,7 +4,15 @@
 $Id: $
 
 Copyright (c) 2012-2012 Jan Seidl <jseidl@wroot.org> (http://wroot.org/)
-See the file 'doc/COPYING' for copying permission
+
+LICENSE:
+This software is distributed under the GNU General Public License version 3 (GPLv3)
+
+LEGAL NOTICE:
+THIS SOFTWARE IS PROVIDED FOR EDUCATIONAL USE ONLY!
+IF YOU ENGAGE IN ANY ILLEGAL ACTIVITY 
+THE AUTHOR DOES NOT TAKE ANY RESPONSIBILITY FOR IT. 
+BY USING THIS SOFTWARE YOU AGREE WITH THESE TERMS.
 """
 
 import getopt, sys
