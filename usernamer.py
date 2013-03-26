@@ -3,7 +3,7 @@
 """
 $Id: $
 
-Copyright (c) 2012-2012 Jan Seidl <jseidl@wroot.org> (http://wroot.org/)
+Copyright (c) 2012-2013 Jan Seidl <jseidl@wroot.org> (http://wroot.org/)
 
 LICENSE:
 This software is distributed under the GNU General Public License version 3 (GPLv3)
