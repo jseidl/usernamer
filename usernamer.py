@@ -23,7 +23,7 @@ import string
 ####
 USERNAMER_VERSION="1.0-rc1"
 BUILD_DATE="2012-03-15"
-AVAILABLE_PLUGINS=[ 'normal', 'two_terms', 'one_term', 'normal_abbreviated', 'dotted_two_terms' ]
+AVAILABLE_PLUGINS=[ 'normal', 'two_terms', 'one_term', 'normal_abbreviated', 'dotted_two_terms', 'starts_with']
 AVAILABLE_FILTERS=[ 'sort', 'unique' ]
 
 ####
@@ -234,8 +234,30 @@ def plugin_normal_abbreviated(firstName, surnames, resultList):
             resultList.append(name)
         for name in abbreviate([ surname, firstName]):
             resultList.append(name)
-    
 
+# Starts With Plugin
+# contributed by Derek Callaway [decal (AT) sdf {D0T} org] https://decal.github.io
+#
+# X Letters First Name Starts With and/or
+# Y Letters Last Name Starts With
+#
+# Generates usernames based on concatenation of
+# first X letters in first name and/or
+# first Y letters in last name
+# 
+# Such naming schemes are often found on legacy
+# systems like AS/400 mainframes, DEC VMS/VAX, etc.
+#
+# Ex. dc dca dcal dcall dec deca decal decall derc derca dercal dercall 
+def plugin_starts_with(firstName, surnames, resultList):
+  for x in range(0, 1 + len(firstName) / 2):  
+    for surname in surnames:
+      resultList.append(firstName[0:x] + surname)
+      for y in range(0, 1 + len(surname) / 2):
+        resultList.append(firstName[0:x] + surname[0:y])
+        resultList.append(firstName + surname[0:y])
+  
+    
 ####
 # Util functions
 ####
