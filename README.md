@@ -12,6 +12,7 @@ usernamer has a plugin structure that enables a series of transformations:
 * one_term: Permutates all name tokens (first name and surnames) and generates single terms usernames (john, doe, doeson)
 * dotted_two_terms: Permutates given name with all surnames (if more than one) with name starting and ending but it will output a two-termed login dot-separated (john.doe, doe.john, john.doeson etc)
 * normal_abbreviated: Generates abbreviated versions of the 'normal' and 'two_terms' plugins (jdoe, johnd, jd etc)
+* starts_with: Generates strings with a variable number of letters that the first and/or last names start with (jd, jod, johd, johnd, jdo, jdoe)
 
 Usage
 -----------------------------------------
@@ -23,7 +24,7 @@ Usage
         -f  supplies name entries from text file
         -l  converts result to lowercase
         -p  manually specify plugins (comma-separated) [default: all]
-            ['normal', 'two_terms', 'one_term', 'normal_abbreviated', 'dotted_two_terms']
+            ['normal', 'two_terms', 'one_term', 'normal_abbreviated', 'dotted_two_terms', 'starts_with']
 
 
 License
