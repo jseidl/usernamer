@@ -1,12 +1,12 @@
 <span style="background: black; color: grey">
 
-<code>usernamer</code> contributors
-===================================
+<h1><kbd>usernamer</kbd> contributors</h1>
 
 <details>
-  **[Derek Callaway](https://github.com/decal)**
-  <summary></summary>
-  * `starts_with` module
+  <summary><a href="https://github.com/decal" rel="noopener noreferrer author tag next"><kbd>Derek Callaway</kbd></a></summary>
+  <ul>
+    <li><code>starts_with</code> module</li>
+  </ul>
 </details>
 
 </span>
