@@ -1,9 +1,12 @@
-<div style="background-color: black; color: grey">
+<span style="background: black; color: grey">
 
 <code>usernamer</code> contributors
 ===================================
 
 <details>
-  <summary>**[Derek Callaway](https://github.com/decal)**</summary>
-  <p>* `starts_with` module</p>
+  **[Derek Callaway](https://github.com/decal)**
+  <summary></summary>
+  * `starts_with` module
 </details>
+
+</span>
