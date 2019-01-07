@@ -21,9 +21,9 @@ import string
 ####
 # Program info
 ####
-USERNAMER_VERSION="1.0-rc1"
-BUILD_DATE="2012-03-15"
-AVAILABLE_PLUGINS=[ 'normal', 'two_terms', 'one_term', 'normal_abbreviated', 'dotted_two_terms', 'starts_with']
+USERNAMER_VERSION="1.0-rc3"
+BUILD_DATE="2018-11-11"
+AVAILABLE_PLUGINS=[ 'normal', 'two_terms', 'one_term', 'normal_abbreviated', 'dotted_two_terms', 'starts_with', 'under_score']
 AVAILABLE_FILTERS=[ 'sort', 'unique' ]
 
 ####
@@ -256,8 +256,18 @@ def plugin_starts_with(firstName, surnames, resultList):
       for y in range(0, 1 + len(surname) / 2):
         resultList.append(firstName[0:x] + surname[0:y])
         resultList.append(firstName + surname[0:y])
+
+def plugin_under_score(firstName, surnames, resultList):
+  for x in range(0, 1 + len(firstName)):
+    for surname in surnames:
+      resultList.append(firstName[0:x] + "_" + surname)
+      resultList.append(surname + "_" + firstName[0:x])
+      for y in range(0, 1 + len(surname)):
+        resultList.append(firstName[0:x] + "_" + surname[0:y])
+        resultList.append(surname[0:y] + "_" + firstName[0:x])
+        resultList.append(firstName + "_" + surname[0:y])
+        resultList.append(surname[0:y] + "_" + firstName)
   
-    
 ####
 # Util functions
 ####
